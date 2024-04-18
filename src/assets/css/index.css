@@ -1,0 +1,185 @@
+/* Global */
+body {
+  margin: 0px;
+  background-color: #ffc210;
+  background-image: linear-gradient(0deg, #ffc210 0%, #ff8640 100%);
+  background-repeat: no-repeat;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h2 {
+  margin: 0px;
+}
+
+div {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    height: 70%;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px 1px #54545429;
+    background-color: #fff;
+    background-image: url('../img/header-bkg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    div {
+      width: 100%;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #39aae9;
+  margin-top: 10px;
+  color: #fff;
+  font-weight: bold;
+
+  p {
+    margin: 2px;
+  }
+}
+
+/* utils */
+.column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.transform-rotate-1 {
+  transform: scale(-1);
+}
+
+.bkg-no-repeat {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #fff;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+/* Elements */
+.title-header {
+  color: black;
+  text-align: center;
+}
+
+.fruits {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  border-radius: 20px;
+  margin: 3%;
+  height: 400px;
+}
+
+.fruit-title {
+  text-align: center;
+  align-items: center;
+  max-width: 50%;
+  margin: 20px;
+  height: 100%;
+
+  h2 {
+    font-family: 'Flavors', cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4em;
+  }
+}
+
+.red-fruits {
+  background-image: url('../img/red-fruits-bkg.png');
+
+  h2 {
+    color: red;
+  }
+}
+
+.yellow-fruits {
+  background-image: url('../img/yellow-bkg.png');
+
+  h2 {
+    color: #ffc800;
+  }
+}
+
+.green-fruits {
+  background-image: url('../img/green-fruit-bkg.png');
+
+  h2 {
+    color: green;
+  }
+}
+
+.blue-fruits {
+  background-image: url('../img/fruit-blue-bkg.png');
+
+  h2 {
+    color: blue;
+  }
+}
+
+@media (max-width: 768px) {
+  .fruits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .fruit-title {
+    max-width: 100%;
+    margin: 5px;
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div {
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .fruits {
+    height: 300px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .fruits {
+    width: 60%;
+    height: 400px;
+  }
+}
